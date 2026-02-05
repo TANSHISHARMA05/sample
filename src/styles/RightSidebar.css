@@ -1,0 +1,191 @@
+.rightSidebar {
+  width: 320px;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: black;
+  height: 700px;
+}
+
+
+
+
+
+/* Profile */
+.profile {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+#name{
+    color: white;
+}
+.profile-img {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  margin-right: 12px;
+}
+
+.profile-info span {
+  font-size: 13px;
+  color: gray;
+} 
+
+/* Suggestions header */
+.suggestions-header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: gray;
+  margin-bottom: 15px;
+}
+
+.see-all {
+  color: black;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+/* Suggestion */
+ .suggestion {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  color:white;
+}
+
+.suggestion-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgb(255, 255, 255);
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.suggestion-left span {
+  display: block;
+  font-size: 12px;
+  color:gray;
+}
+
+.follow-btn {
+  background: none;
+  border: none;
+  color: #0095f6;
+  font-weight: bold;
+  cursor: pointer;
+}
+.searchBox {
+  margin: 12px 0;
+}
+
+.searchBox input {
+  width: 90%;
+  padding: 8px 10px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+}  
+
+
+
+
+/* =========================
+   🌙 DARK THEME (Instagram)
+========================= */
+.rightSidebar.dark {
+  background-color: #000000;
+  color: #ffffff;
+  .suggestions-header .see-all {
+  color:rgb(255, 255, 255);
+}
+.suggestions-header .suggestion-head{
+   color:white;
+}
+ 
+}
+
+/* =========================
+   ☀ LIGHT THEME (Instagram)
+========================= */
+.rightSidebar.light {
+  background-color: #ffffff;
+  color: #000000;
+  border-left: 1px solid #dbdbdb;
+   .suggestions-header .see-all {
+  color:black;
+}
+.suggestions-header .suggestion-head{
+   color:black;
+}
+.profile-info #name{
+  color:black;
+}
+.profile-info #fullstack{
+  color:black;
+}
+
+ .suggestion .userbio{
+  color:black;
+ }
+
+ //* =====================================
+   LIGHT MODE – SEARCH INPUT FINAL FIX
+===================================== */
+
+.rightSidebar.light .searchBox input {
+  background: #000000 !important;  /* 🔥 must use background */
+  color: #ffffff !important;
+  border: none !important;
+}
+
+/* Placeholder te*/
+ .searchBox input::placeholder {
+  color: #ffffff;
+}
+.searchBox #newbox {
+  background-color: #000000;
+  color:#ffffff
+}
+
+}
+
+
+/* =========================
+   THEME BASED TEXT COLORS
+========================= */
+
+/* 🌙 DARK THEME */
+/* .rightSidebar.dark #name, */
+
+/* =========================
+   THEME TOGGLE BUTTON
+========================= */
+.theme-toggle {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 12px;
+}
+
+.theme-toggle button {
+  background: none;
+  border: none;
+  font-size: 13px;
+  font-weight: bold;
+  color: #0095f6; /* Instagram blue */
+  cursor: pointer;
+}
+
+ 
